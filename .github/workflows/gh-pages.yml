@@ -23,7 +23,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           publish_branch: gh-pages
-          cname: allegrotravels.com
+          cname: www.allegrotravels.com
 
       - name: Deploy to GitHub Pages (Dev)
         if: github.ref == 'refs/heads/dev'
@@ -33,3 +33,4 @@ jobs:
           publish_dir: ./
           publish_branch: gh-pages
           destination_dir: dev 
+          cname: dev.allegrotravels.com
